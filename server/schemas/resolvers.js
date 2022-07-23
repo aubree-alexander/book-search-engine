@@ -7,7 +7,6 @@ const resolvers = {
   Query: {
     me: async (parent, args, context) => {
       if (context.user) {
-        //context.user._id means user who is logged in
         const userData = await User.findOne({ _id: context.user._id }).select('-__v -password');
         return userData;
       }
@@ -16,7 +15,6 @@ const resolvers = {
   },
 
   Mutation: {
-    //args is graphql equiv of req.body
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);

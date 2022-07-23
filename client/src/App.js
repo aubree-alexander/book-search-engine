@@ -31,9 +31,9 @@ const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
-//want to use apollo stuff on front end
-//take auth link (created on line 18) and concat httplink and stores in memory cache
-//essentially creates link between front and back end! 
+//allows us to use apollo on front end
+//take auth link above and concat httplink and stores in memory cache
+//creates link between front and back end! 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),

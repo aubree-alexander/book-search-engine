@@ -1,5 +1,4 @@
 const express = require('express');
-//similar to sequelize store
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');

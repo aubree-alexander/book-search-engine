@@ -1,4 +1,4 @@
-//this file - getting queries/resolvers/typedefs from back end and prepare them to be used by react front end.
+//this file is getting queries/resolvers/typedefs from back end and prepares them to be used by react front end.
 
 import { gql } from '@apollo/client'
 
