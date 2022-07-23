@@ -6,7 +6,7 @@
 * GraphQL
 
 ## Photo 
-
+<img width="947" alt="book-search-engine" src="https://user-images.githubusercontent.com/99295420/180585894-1235cb69-f11e-4851-aa1d-935b1e687f7a.png">
 
 ## Description/Purpose
 * Challenge for UW Extensions Coding Bootcamp
